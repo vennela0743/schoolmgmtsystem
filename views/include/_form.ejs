@@ -1,0 +1,70 @@
+ <!--form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+  <div class="new_user">
+
+    <div class="form-group">
+      <label for="name" class="text-light">Name</label>
+      <input type="text"name="name"value=""placeholder="Vennela">
+    </div>
+
+    <div class="form-group">
+      <label for="registrationnumber" class="text-light">ID</label>
+      <input type="text"name="registrationnumber"value=""placeholder="20BCE7645">
+    </div>
+
+    <div class="form-group">
+      <label for="role" class="text-light">Role</label>
+      <input type="text"name="role"value=""placeholder="Student">
+    </div>
+
+    <div class="form-group">
+      <label for="schoolid" class="text-light">School_id</label>
+      <input type="text"name="schoolid"value=""placeholder="20001">
+    </div>
+
+    <div class="form-group">
+      <label for="gender" class="text-light">Gender</label>
+           <div class="radio inline">
+             <input type="radio" id="radio-1" name="gender" value="Male">
+             <label for="radio-1" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+            <input type="radio" id="radio-2" name="gender" value="Female" >
+            <label for="radio-2" class="radio-label">Female</label>
+            </div>
+    </div>
+
+    <div class="form-group">
+      <label for="city" class="text-light">City</label>
+      <input type="text"name="city"value=""placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="subject" class="text-light">Subject(for teahcer*)</label>
+      <input type="text"name="subject"value=""placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="maths_marks" class="text-light">Maths marks(for students*)</label>
+      <input type="text"name="maths_marks"value=""placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="science_marks" class="text-light">Science marks(for students*)</label>
+      <input type="text"name="science_marks"value=""placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="english_marks" class="text-light">English marks(for students*)</label>
+      <input type="text"name="english_marks"value=""placeholder="Vegas">
+    </div>
+
+    
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+
+  </div>
+
+  
+ </form>

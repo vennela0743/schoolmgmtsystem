@@ -1,0 +1,98 @@
+<!-- include header -->
+<%-include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main site-->
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <div class="filter">
+            <a href="/"> <i class="fas fa-angle-double-left"></i> All Users</a>
+          </div>
+        </div>
+        <div class="form-title text-center">
+          <h2 class ="text-dark">Update User</h2>
+          <span class = "text-light">Use the below form to Update an account</span>
+        </div>
+        
+        <!-- add user form-->
+         <!--form handling -->
+ <form method="POST" id="update_user">
+  <div class="new_user">
+
+    <div class="form-group">
+      <label for="name" class="text-light">Name</label>
+      <input type="hidden" name="id" value="<%= user._id %>">
+      <input type="text"name="name"value="<%=user.name%>" placeholder="Vennela Priya">
+
+    </div><div class="form-group">
+      <label for="registrationnumber" class="text-light">ID</label>
+      <input type="text"name="registrationnumber"value="<%=user.registrationnumber%>"placeholder="20BCE7645">
+    </div>
+
+    <div class="form-group">
+      <label for="role" class="text-light">Role</label>
+      <input type="text"name="role"value="<%=user.role%>"placeholder="Student">
+    </div>
+
+    <div class="form-group">
+      <label for="schoolid" class="text-light">School_id</label>
+      <input type="text"name="schoolid"value="<%=user.schoolid%>"placeholder="20001">
+    </div>
+
+    <div class="form-group">
+      <label for="gender" class="text-light">Gender</label>
+      <div class="radio inline">
+          <input type="radio" id="radio-2" name="gender" value="Male" <%= user.gender == 'Male' ? 'checked' : '' %>>
+          <label for="radio-2" class="radio-label">Male</label>
+      </div>
+      <div class="radio inline">
+          <input type="radio" id="radio-3" name="gender" value="Female"  <%= user.gender == 'Female' ? 'checked' : '' %> >
+          <label for="radio-3" class="radio-label">Female</label>
+      </div>
+  </div>
+
+    <div class="form-group">
+      <label for="city" class="text-light">City</label>
+      <input type="text"name="city"value="<%=user.city%>"placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="subject" class="text-light">Subject(for teahcer*)</label>
+      <input type="text"name="subject"value="<%=user.subject%>"placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="maths_marks" class="text-light">Maths marks(for students*)</label>
+      <input type="text"name="maths_marks"value="<%=user.maths_marks%>"placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="science_marks" class="text-light">Science marks(for students*)</label>
+      <input type="text"name="science_marks"value="<%=user.science_marks%>"placeholder="Vegas">
+    </div>
+
+    <div class="form-group">
+      <label for="english_marks" class="text-light">English marks(for students*)</label>
+      <input type="text"name="english_marks"value="<%=user.english_marks%>"placeholder="Vegas">
+    </div>
+
+    
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+    
+  </div>
+
+  
+ </form>
+
+      </div>
+    </main>
+    <!-- /Main site-->
+
+
+<!-- include footer-->
+<%-include('include/_footer')%>
+<!--/include footer-->
